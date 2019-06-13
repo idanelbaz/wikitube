@@ -1,0 +1,199 @@
+section {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.header {
+    color: rgb(255, 145, 145);
+    font-size: 8rem;
+    text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+    margin: 0 auto;
+}
+
+.left {
+    background-color: aliceblue;
+    flex-grow: 1;
+    text-align: center;
+    flex-direction: column;
+}
+
+.next-video {
+    width: 22rem;
+    height: 6rem;
+    display: flex;
+    margin-top: 1rem;
+    background-color: rgb(120, 120, 120);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.next-vid img {
+    height: 100%;
+}
+
+.next-vid-p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+.next-vid {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right {
+    background-color: #6d0019;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+ul {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    top: -2rem;
+}
+
+li {
+    background-color: white;
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: lightgrey;
+}
+
+.myButton {
+    -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+    background: -moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background: -webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background: -o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background: -ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+    background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c', GradientType=0);
+    background-color: #768d87;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #2b665e;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+    background: -moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background: -webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background: -o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background: -ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+    background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87', GradientType=0);
+    background-color: #6c7c7c;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.search-cont {
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+input {
+    width: 15rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.wiki-head {
+    font-size: 2rem;
+}
+
+.wiki-body {
+    font-size: 1rem;
+}
+
+.wiki {
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1055px) {
+    section {
+        width: 90vw;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header {
+        font-size: 5rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .header {
+        font-size: 3rem;
+    }
+    .next-video {
+        width: 80%;
+        height: 6rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    input {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .right {
+        height: auto;
+        width: 80%;
+    }
+    .search-cont {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    ul {
+        width: 15.9rem;
+        top: -3.58rem;
+    }
+}

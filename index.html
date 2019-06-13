@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WikiTube</title>
+    <link rel="stylesheet" href="css/main-css.css">
+
+
+</head>
+
+<body onload="onInit()">
+    <section class="main-container">
+        <section class="left">
+            <h1 class="header">WikiTube</h1>
+            <div class="next-vid">
+
+            </div>
+        </section>
+        <section class="right">
+            <div class="search-cont">
+
+                <input oninput="renderSearchAuto(this)" onkeypress="checkIfEnter(event)" type="search" placeholder="Search video" autofocus>
+                <button class="myButton" onclick="handleSearch()">Search</button>
+                <ul hidden>
+
+                </ul>
+            </div>
+
+            <iframe width="450" height="315" style="margin: 0 auto" src=""> </iframe>
+            <div class="wiki">
+
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <script src="lib/swal.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/axios.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>s
